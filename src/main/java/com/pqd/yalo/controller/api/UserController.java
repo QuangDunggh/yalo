@@ -1,4 +1,4 @@
-package com.pqd.yalo.controller;
+package com.pqd.yalo.controller.api;
 
 import java.util.List;
 
@@ -8,7 +8,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import com.pqd.yalo.model.User;
-import com.pqd.yalo.repository.UserRepository;
 import com.pqd.yalo.service.UserService;
 
 import lombok.RequiredArgsConstructor;
@@ -18,7 +17,7 @@ import javax.validation.Valid;
 @RestController
 @RequestMapping("api/v1/user")
 @RequiredArgsConstructor
-public class UserController {
+public class ApiUserController {
      
     private final UserService userService;
 
